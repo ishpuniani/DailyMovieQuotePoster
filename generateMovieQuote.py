@@ -10,8 +10,7 @@ def generateMovieQuote():
 	movie="null"
 
 	while quote=="null" or movie=="null":
-		#url = "http://www.moviequotes.com/archive/bynumber/"+str(random.randint(100,5000))+".html"
-		url="http://www.moviequotes.com/archive/bynumber/2336.html"
+		url = "http://www.moviequotes.com/archive/bynumber/"+str(random.randint(100,5000))+".html"
 		print "requesting url: ",url
 
 		page = requests.get(url,timeout=5)
